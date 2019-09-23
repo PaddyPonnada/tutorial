@@ -63,5 +63,7 @@ console.log("nums: " + nums);
 console.log("nums2: " + nums2);
 console.log("nums3: " + nums3);
 console.log("Saving new file / test git")
+console.log("create new feature")
+console.log("create branch feature2")
 
 //console.log(magic1());
