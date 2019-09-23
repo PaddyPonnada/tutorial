@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"> 
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        <!-- html elemnts are boxes with properties 1. padding 2. marging 3. border -->
+        <!-- sytling id's start wth # -->
+        #h2-style-id { 
+            color: green; 
+        }
+
+        #name-input-form {
+            background-color: green;
+        }
+        p {color: red; font-size: 16px; font-family: monospace; }
+        
+        h2 {  <!-- element -->
+            border-color: green; 
+            border-width: 1px;
+            border-style: solid;   
+            background-color: red; 
+        }
+        
+        <!-- classes can be applied to many elements -->
+        .silver-background { <!-- class -->
+            background-color: silver;
+        }
+        
+        .blue-text { 
+            color: blue;
+            font-size: 32;
+            }
+        
+        .small-image {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            paddin-top: 5px;
+            border-color: green; 
+            border-width: 5px;
+            border-style: solid;
+           <!-- border-radius: 50%; -->
+        }    
+
+        .box {
+            width: 300px;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
+        .blue-box {
+            background-color: blue;
+            margin:  10px;
+            padding: 10px 10px 10px 10px; <!-- top right bottom left-->
+        }
+
+        .red-box {
+            background-color: red;
+            margin: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px; <!-- absolute: 10px; relative 1.5em -->
+        }
+        [type='radio'] {
+            margin: 20px;
+        }
+        [type='checkbox'] {
+            margin: 10px 0px 15px 0px;
+        }
+        body {
+            background: #fff; <!-- 00:Red 00:Green 00:Blue-->
+            color: rgb(0, 0, 0);
+            font-family: monospace;
+        }
+        #orange-text {
+            color: orange;
+        }
+        .pink-text {
+            color: rgb(0,0,0) !important; <!-- most important style-->
+        }
+
+        .blue-text {
+            color: blue;
+        }
+        .vars {
+            --h4-color: red;
+        }
+        #h4-style-id {
+            color; green !important;
+        }
+    </style>
+    
+    <body>
+        <h1 class="pink-text blue-text" id="orange-text" style="color: white"> Hello, World!</h1> <!-- order depends on the order in style sheet-->
+        <!--h2 style="color: red;"> My Photoshop</h2-->
+        <h2 id="h2-style-id">My Photoshop</h2>
+        <p>This is first paragraph</p>
+        <h3 class="blue-text">H3 heading</h3> 
+        <h4 style="color: var(--h4-color, red)">first H4 heading</h4>
+        <h4>second H4 heading</h4>
+        <h4>third H4 heading</h4>
+        <h4>fourth H4 heading</h4>
+          
+        <!-- id is for styling; id can be applied to one elmemnt only unline class -->
+        <!-- form id="name-input-form"> <!-- used for collecting user input -->
+       <form action="/submit-text" id="submit-form">
+            <label> <input type="radio" name="indoor-outdoor" checked> Indoor </label>
+            <label> <input type="radio" name="indoor-outdoor"> Outdoor </label> <br/>
+            <label> <input type="checkbox" name="personality" checked> Active </label>
+            <label> <input type="checkbox" name="personality"> Lazy </label>
+            <label> <input type="checkbox" name="personality"> Sloppy </label>
+            <label> <input type="checkbox" name="personality"> Energetic </label> 
+            <br/><br/><br/>
+        </form>
+
+        <form class="box">
+            First name:
+            <input class="blue-box" type="text" name="firstName"><br><br>
+            Last name: 
+            <input class="red-box" type="text" name="lastName"><br>
+        </form>
+        <br/> <br/>
+        <img class="small-image" src="https://media.mnn.com/assets/images/2019/04/t_rex_fighting_triceratops.JPG.838x0_q80.jpg" alt="A really scary Dino"/>
+
+    </body>    
+</html>

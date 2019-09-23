@@ -62,5 +62,6 @@ nums3 = nums.filter( a => a > 0).map( x => x * x)
 console.log("nums: " + nums);
 console.log("nums2: " + nums2);
 console.log("nums3: " + nums3);
+console.log("Saving new file / test git")
 
 //console.log(magic1());
