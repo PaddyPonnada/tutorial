@@ -2,3 +2,6 @@ print("My name is Python")
 print("Second line")
 print("Third line")
 print("Fourth line")
+
+# critical fix 
+print("added critical fix")
